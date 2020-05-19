@@ -1,0 +1,9 @@
+HTML :
+
+The main components of a site are defined by HTML elements
+HTML elements have corresponding tags inside an .html file.
+
+HTML has <ul> and <ol> tags to help make display a list of information on a webpage easier. ol stands for ordered list which are
+numbered while ul stands for unordered list which are buleted. 
+
+Divs and Spans allow us to segment portions of  our HTML

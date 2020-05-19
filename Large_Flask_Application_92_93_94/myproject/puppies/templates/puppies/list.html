@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+  <h1>Here is the List of all the Puppies</h1>
+
+  <form  method="POST">
+    <ul>
+
+    {% for pup in pups %}
+
+      <li>{{pup}}</li>
+
+    {% endfor %}
+    </ul>
+  </form>
+
+</div>
+
+{% endblock %}

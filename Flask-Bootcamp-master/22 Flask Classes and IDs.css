@@ -1,0 +1,13 @@
+/* for class use a dot (.) and for id use a hashtag (#) */
+
+.FirstDiv{
+  color: blue;
+}
+
+.SecondDiv{
+  background-color: rgba(255, 255, 100, 0.7);
+}
+
+#singledout{
+  color: red;
+}

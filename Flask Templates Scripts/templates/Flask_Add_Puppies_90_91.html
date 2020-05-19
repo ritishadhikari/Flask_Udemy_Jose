@@ -1,0 +1,22 @@
+{% extends 'Flask_Base_Puppies_90_91.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+  <h1>Have a Puppy that needs to be adopted?</h1>
+  <p>Please enter Your Puppy Details</p>
+
+  <form  method="POST">
+
+    {{form.hidden_tag()}}
+    {{form.name.label}} {{form.name()}}
+    {{form.submit()}}
+
+
+  </form>
+
+</div>
+
+
+{% endblock %}

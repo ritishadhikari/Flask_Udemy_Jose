@@ -1,0 +1,20 @@
+{% extends 'Flask_Base_Puppies_90_91.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+    <h1>Here is the List of all the Owners</h1>
+
+    <ul>
+
+      {% for owner in owners %}
+
+      <li> {{owner}} </li>
+
+      {% endfor %}
+
+    </ul>
+    </div>
+
+    {% endblock %}

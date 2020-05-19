@@ -1,0 +1,19 @@
+h1{
+  font-size: 32
+  font-family: consolas;
+}
+
+p {
+
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: bolder;
+  font-style: oblique;
+  text-align: center;
+}
+
+#two{
+  font-size: 15;
+  font-family: 'Mansalva', cursive;
+  font-weight: lighter;
+}

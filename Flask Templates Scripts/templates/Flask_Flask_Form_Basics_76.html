@@ -1,0 +1,22 @@
+<p>
+
+{% if breed_to_pass %}
+
+The Breed you entered is {{breed_to_pass}}
+Update it in the form below:
+
+{% else %}
+
+Please enter your breed:
+{% endif %}
+ </p>
+
+ <form method="POST">
+
+  {{ form.hidden_tag() }}
+  {{ form.breed.label }} <br><br>
+  {{ form.breed() }}
+  <br><br>
+  {{ form.submit() }}
+
+ </form>

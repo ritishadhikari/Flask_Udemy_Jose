@@ -1,0 +1,40 @@
+{% extends 'Flask_Base_Puppies_90_91.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+  <h1>Are you the owner of a Puppy</h1>
+  <p>Add your credentials</p>
+
+
+
+
+
+  <form method="POST">
+
+    {{form.hidden_tag()}}
+    <br>
+    {{form.name.label}} {{form.name()}}
+    <br>
+    <br>
+    {{form.puppy_id.label}} {{form.puppy_id()}}
+    {{form.submit()}}
+
+  </form>
+
+  {% for mesh in get_flashed_messages() %}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <button type="button" data-dismiss="alert" aria-label="Close" class='Fade close'>
+      <span aria-hidden="true">&times;</span>
+    </button>
+    {{mesh}}
+  </div>
+  {%endfor %}
+
+
+
+
+</div>
+
+{% endblock %}

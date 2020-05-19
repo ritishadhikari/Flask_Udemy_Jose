@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+
+    <ul>
+
+      {% for item in my_list %}
+
+
+      <li><h1>{{item}}</h1></li>
+
+
+      {% endfor %}
+
+    </ul>
+
+
+
+      {% if 3 in my_list %}
+
+      <h2><p>3 is Found</p></h2>
+
+
+      {% endif %}
+
+
+    <ul>
+
+        {% for item in my_list %}
+
+        {% if item == 3 %}
+
+
+        <li><h1>{{item}}</h1></li>
+
+
+        {% endif %}
+        {% endfor %}
+
+    </ul>
+
+
+  </body>
+</html>

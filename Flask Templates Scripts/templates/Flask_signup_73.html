@@ -1,0 +1,25 @@
+{% extends "Flask_base_73.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+  <h1>Welcome to the Signup Page!</h1>
+  <p>Fill out the Form. Notice we don't save any info!</p>
+
+      <form  action={{url_for('Thank_you')}} method="GET">
+
+        <label for="first">First Name</label>
+        <input type="text" name="first">
+
+        <label for="last">Last Name</label>
+        <input type="text" name="last">
+
+        <input type="submit" name="Submit Form">
+
+      </form>
+
+
+</div>
+
+{% endblock %}

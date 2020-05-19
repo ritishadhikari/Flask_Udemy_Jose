@@ -1,0 +1,42 @@
+{% extends 'Flask_base_74_75.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+  
+    <p>Lets check your User Name</p>
+
+    {% if report %}
+      <p>Your Username passed all checks !</p>
+
+    {% else %}
+
+        <ul>
+
+          {% if not lower_case %}
+
+            <li><p>You did not use a Lower Case Letter</p></li>
+
+          {% endif %}
+
+          {% if not upper_case %}
+
+            <li><p>You did not use an Upper Case Letter</p></li>
+
+          {% endif %}
+
+          {% if not numbers %}
+
+            <li><p>You did not use a Digit in the Last</p></li>
+
+          {% endif %}
+
+        </ul>
+
+
+    {% endif %}
+
+</div>
+
+{% endblock %}
